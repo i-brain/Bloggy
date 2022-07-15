@@ -8,6 +8,8 @@ part of 'comment_service.dart';
 
 // ignore_for_file: unnecessary_brace_in_string_interps
 
+// ignore_for_file: no_leading_underscores_for_local_identifiers, avoid_returning_null_for_void
+
 class _CommentService implements CommentService {
   _CommentService(this._dio, {this.baseUrl}) {
     baseUrl ??= 'https://bloggy-api.herokuapp.com';
