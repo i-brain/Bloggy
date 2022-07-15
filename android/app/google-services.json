@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "226401517485",
+    "project_id": "bloggy-c225b",
+    "storage_bucket": "bloggy-c225b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226401517485:android:91398c6ba2526d4ed02b24",
+        "android_client_info": {
+          "package_name": "com.example.test_task"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226401517485-qarmmn6ifc5657c93qhkub2navjgjt0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLs4fIyPFJYrK_KnhGOAFxkSdt7l2z0hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226401517485-qarmmn6ifc5657c93qhkub2navjgjt0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
