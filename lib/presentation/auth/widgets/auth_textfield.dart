@@ -25,7 +25,7 @@ class AuthTextField extends StatelessWidget {
           ? TextInputType.emailAddress
           : null,
       validator: (value) {
-        if (value!.isEmpty) {
+        if (value!.trim().isEmpty) {
           return "This field is required";
         }
         return null;

@@ -64,7 +64,7 @@ class _EditBlogPageState extends State<EditBlogPage> {
                 textInputAction: TextInputAction.next,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 validator: (value) {
-                  if (value!.isEmpty) {
+                  if (value!.trim().isEmpty) {
                     return "Title is required";
                   }
                   return null;
@@ -84,7 +84,7 @@ class _EditBlogPageState extends State<EditBlogPage> {
                 keyboardType: TextInputType.multiline,
                 autovalidateMode: AutovalidateMode.onUserInteraction,
                 validator: (value) {
-                  if (value!.isEmpty) {
+                  if (value!.trim().isEmpty) {
                     return "Body is required";
                   }
                   return null;

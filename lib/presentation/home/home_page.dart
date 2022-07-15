@@ -36,19 +36,27 @@ class HomePage extends StatelessWidget {
           builder: (context, state) {
             if (state is AllBlogsSuccess) {
               final allBlogs = state.allBlogs;
-              return allBlogs.isEmpty
-                  ? const Center(
-                      child: Text("No blogs available"),
-                    )
-                  : ListView.builder(
-                      itemCount: allBlogs.length,
-                      itemBuilder: (context, index) {
-                        final blog = allBlogs[index];
-                        return BlogItem(
-                          blog: blog,
-                        );
-                      },
-                    );
+              if (allBlogs.isEmpty) {
+                return Center(
+                  child: Text(
+                    "No blogs available",
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline4!
+                        .copyWith(fontSize: 18.sp, color: Colors.black),
+                  ),
+                );
+              }
+
+              return ListView.builder(
+                itemCount: allBlogs.length,
+                itemBuilder: (context, index) {
+                  final blog = allBlogs[index];
+                  return BlogItem(
+                    blog: blog,
+                  );
+                },
+              );
             }
             if (state is AllBlogsFailure) {
               return Center(

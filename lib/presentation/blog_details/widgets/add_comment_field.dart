@@ -66,7 +66,7 @@ class _AddCommentFieldState extends State<AddCommentField> {
   }
 
   void addComment() {
-    if (_commentController.text.isEmpty) return;
+    if (_commentController.text.trim().isEmpty) return;
     context.read<AddCommentCubit>().addComment(
           comment: CommentReqModel(
             postId: widget.blogId,
